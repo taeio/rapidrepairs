@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: radial-gradient(circle at top right, rgba(225,6,0,0.15), #0b0b0b 40%);
+  color: white;
+  line-height: 1.6;
+}
+
+section {
+  padding: 100px 10%;
+  text-align: center;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0,0,0,0.85);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: 700;
+}
+
+.nav-btn {
+  background: #e10600;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+}
+
+.btn-primary {
+  background: #e10600;
+  padding: 14px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  color: white;
+  margin-right: 15px;
+  box-shadow: 0 0 20px rgba(225,6,0,0.6);
+}
+
+.btn-outline {
+  border: 1px solid #e10600;
+  padding: 14px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  color: white;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #141414;
+  padding: 30px;
+  border-radius: 20px;
+  width: 300px;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border: 1px solid #e10600;
+  box-shadow: 0 0 25px rgba(225,6,0,0.4);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+/* SERVICE OPTIONS */
+.service-options {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.option {
+  background: #141414;
+  padding: 40px;
+  border-radius: 20px;
+  width: 350px;
+}
+
+/* BEFORE AFTER */
+.before-after img {
+  width: 280px;
+  border-radius: 20px;
+  margin: 10px;
+  border: 1px solid #e10600;
+}
+
+/* PRICING */
+.price {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #e10600;
+}
+
+.small {
+  opacity: 0.6;
+}
+
+/* TRUST */
+.trust ul {
+  list-style: none;
+  line-height: 2;
+}
+
+/* FLOATING CALL */
+.floating-call {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #e10600;
+  padding: 15px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+/* SCROLL ANIMATION */
+.hidden {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
